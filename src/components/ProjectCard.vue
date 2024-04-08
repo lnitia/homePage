@@ -16,10 +16,10 @@
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
   width: 98%;
   margin-left:1%;
-  margin-bottom: 30px;
+  margin-top: 20px;
   border:2px dashed #F7EEEE;
   border-radius:5px;
-  background-color: #f5f5f5;
+  background-color: rgba(245, 245, 245, 0.8);
 
   &:before, &:after{
     position:absolute;
