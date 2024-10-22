@@ -3,8 +3,8 @@
 
 <template>
   <div class="layout">
-    <el-container>
-      <el-main>
+    <el-container class="container">
+      <el-main class="main-content">
         <div class="name">
           lnitia's world
           <div class="desc">no rain, no flowers</div>
@@ -15,12 +15,12 @@
               <h3>React项目</h3>动力学仿真前后处理系统
             </el-card>
           </a>
-          <a class="link" href="/#/project?scrollTo=project2">
+          <a class="link" href="/#/project?scrollTo=project3">
             <el-card shadow="hover">
               <h3>Vue项目</h3>研究生小组周报系统
             </el-card>
           </a>
-          <a class="link" href="/#/project?scrollTo=project3">
+          <a class="link" href="/#/project?scrollTo=project2">
           <el-card shadow="hover">
             <h3>HoloLens项目</h3>有限元仿真可视化系统
           </el-card>
@@ -31,7 +31,6 @@
             </el-card>
           </a>
         </div>
-        <!-- <RouterView /> -->
       </el-main>
       <el-footer>
         <p>Copyright © 2024 lnitia</p> <!-- | 微信: lnitia_90398 | 邮箱: xinlnitia@163.com -->
@@ -47,10 +46,12 @@
 <style scoped>
 .el-main {
   width: 100%;
+  min-height: calc(100vh - 12ch);
   margin: 0;
   padding: 0;
   background: url('@/assets/bizhi.jpg') no-repeat top / cover;
   background-attachment: fixed;
+  overflow-x: hidden;
   
   .name {
     font-size: 60px;

@@ -9,7 +9,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 
 const getActiveMenuItem = (routePath) => {
-  if (routePath === '/') {
+  if (routePath === '/home') {
     return '1';
   } else if (routePath === '/project') {
     return '2';
@@ -21,12 +21,12 @@ const getActiveMenuItem = (routePath) => {
 
 <template>
   <el-affix :offset="0">
-    <el-header>
+    <el-header class="header">
       <div></div>
       <el-menu :default-active="getActiveMenuItem($route.path) " class="el-menu" mode="horizontal" :ellipsis="false"
         text-color="#666666" active-text-color="#6DAFE3">
         <el-menu-item index="1">
-          <RouterLink to="/" class="link">
+          <RouterLink to="/home" class="link">
             <el-icon>
               <Sunny />
             </el-icon>

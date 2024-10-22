@@ -1,10 +1,10 @@
 <template>
   <div class="about">
     <div class="aboutme">
-      <img class=avatar src="@/assets/avatar.png" />
+      <img class="avatar" src="@/assets/avatar.png" />
       <h1>许篮心<br>lnitia</h1>
     </div>
-    <el-timeline style="max-width: 600px">
+    <el-timeline class="timeline" style="max-width: 600px">
       <el-timeline-item timestamp="基础信息" placement="top">
         <el-card>
           <p>西南交通大学硕士研究生在读</p>
@@ -38,22 +38,60 @@
 </template>
 
 <style>
+.about {
+  min-height: 92vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.aboutme {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  max-width: 240px;
+  margin: 0 20px;
+}
+
+.timeline {
+  scale: 1.2;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+/* 使用媒体查询进行调整 */
+@media (max-width: 800px) {
   .about {
-    min-height: 92vh;
-    display: flex;
+    min-height: auto;
+    flex-direction: column; 
     align-items: center;
-    
-    .aboutme {
-      display: flex;
-      align-items: center;
-      margin: 0 160px 140px 300px;
-      .avatar {
-        max-width: 240px;
-        margin: 0 20px;
-      }
-    }
-    .el-timeline {
-      scale: 1.2;
-    }
+    justify-content: center;
   }
+
+  .aboutme{
+    position: relative; 
+    left: auto; 
+    top: auto;
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .timeline {
+    position: relative; 
+    left: auto; 
+    top: auto;
+    margin-top: 50px; 
+    max-width: 400px;
+  }
+}
 </style>

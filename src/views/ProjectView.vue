@@ -36,7 +36,8 @@ onMounted(() => {
           • 后处理模块：基于unity render streaming的视频流云渲染、视频界面的人机交互、结果文件导出<br />
         </div>
         <a href="http://xlinwork.online:8001/projects/01qd.html">
-        <el-button round>MORE</el-button></a>
+          <el-button round>MORE</el-button>
+        </a>
         <!-- <a href="#project2">👇</a> -->
       </div>
       <div class="projectimg">
@@ -54,7 +55,9 @@ onMounted(() => {
           • 仿真结果可视化模块：有限元仿真结果映射、混合现实设备人机交互、虚实融合可视化<br />
           • 虚拟装配模块：模型干涉检测、虚拟物体实景放置、装配结果反馈<br />
         </div>
-        <!-- <el-button round>MORE</el-button> -->
+        <a href="http://xlinwork.online:8001/projects/03227.html">
+          <el-button round>MORE</el-button>
+        </a>
       </div>
     </div>
     <div id="project3" class="project" style="background: linear-gradient(50deg, #9daa86 0%, #626a54 100%)">
@@ -65,7 +68,9 @@ onMounted(() => {
           • 周报后台管理系统选用 Vue-admin-template 中后台框架，基于 Vue2 + elementUI + mavonEditor + axios + vueX 开发<br />
           • 周报后端基于 node.js，采用 express + mysql 开发，使用 joi 设置验证规则，cors 解决跨域，express-jwt 解析token等<br />
         </div>
-        <!-- <el-button round>MORE</el-button> -->
+        <a href="http://xlinwork.online:8001/projects/02wb.html">
+          <el-button round>MORE</el-button>
+        </a>
       </div>
       <div class="projectimg">
         <img src="@/assets/week.png" alt="" />
@@ -179,7 +184,7 @@ onMounted(() => {
 
   .project{
     width: 100%;
-    height:778px;
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
